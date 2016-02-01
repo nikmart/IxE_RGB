@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RGB LED Controller</title>
+
+<script type="text/javascript">
+    function updateTextInput(val, sliderTextID) {
+      document.getElementById(sliderTextID).value=val; 
+    }
+</script>
+
+</head>
+
+<body>
+
+<h1>RGB LED Controller</h1>
+
+<p>Set the slider to mix RGB colors on the LED</p>
+
+<div>
+<label for="red_range">RED:</label>
+<input type="range" name="red_range" min="0" max="255" onchange="updateTextInput(this.value, 'redVal');">
+<input type="text" id="redVal" value="127">
+</div>
+
+<div>
+<label for="blue_range">BLUE:</label>
+<input type="range" name="blue_range" min="0" max="255" 
+onchange="updateTextInput(this.value, 'blueVal');">
+<input type="text" id="blueVal" value="127">
+</div>
+
+<div>
+<label for="green_range">GREEN:</label>
+<input type="range" name="green_range" min="0" max="255" 
+onchange="updateTextInput(this.value, 'greenVal');">
+<input type="text" id="greenVal" value="127">
+</div>
+
+</body>
+</html>
