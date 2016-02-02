@@ -5,6 +5,19 @@ var b = 200;
 
 function updateTextInput(val, sliderTextID) {
   document.getElementById(sliderTextID).value=val;
+  console.log(sliderTextID);
+
+  switch (sliderTextID) {
+    case "redVal":
+      r = val;
+      break;
+    case "greenVal":
+      g = val;
+      break;
+    case "blueVal":
+      b = val;
+      break;
+  }
   socket.emit('rgb', {r,g,b});
 }
 
