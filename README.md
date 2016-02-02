@@ -1,6 +1,6 @@
 #IxE RGB LED color controller
 
-Control the colors of an RGB LED using a simple web interface. Uses simple HTMP slider to set the values of the lights.
+Control the colors of an RGB LED using a simple web interface. Uses simple HTML sliders to set the values of the lights.
 
 ##How to run
 1. Clone the repo
