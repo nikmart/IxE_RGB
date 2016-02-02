@@ -3,13 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>RGB LED Controller</title>
-
-<script type="text/javascript">
-    function updateTextInput(val, sliderTextID) {
-      document.getElementById(sliderTextID).value=val; 
-    }
-</script>
-
+<script src="/socket.io/socket.io.js"></script>
 </head>
 
 <body>
@@ -26,17 +20,18 @@
 
 <div>
 <label for="blue_range">BLUE:</label>
-<input type="range" name="blue_range" min="0" max="255" 
+<input type="range" name="blue_range" min="0" max="255"
 onchange="updateTextInput(this.value, 'blueVal');">
 <input type="text" id="blueVal" value="127">
 </div>
 
 <div>
 <label for="green_range">GREEN:</label>
-<input type="range" name="green_range" min="0" max="255" 
+<input type="range" name="green_range" min="0" max="255"
 onchange="updateTextInput(this.value, 'greenVal');">
 <input type="text" id="greenVal" value="127">
 </div>
 
+<script src="client.js"></script>
 </body>
 </html>
