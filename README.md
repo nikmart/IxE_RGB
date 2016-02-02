@@ -4,7 +4,7 @@ Control the colors of an RGB LED using a simple web interface. Uses simple HTMP 
 
 ##How to run
 1. Clone the repo
-2.`npm install`
+2. Run `npm install`
 3. Load the Arduino code
 4. Run using `node server.js /arduino/serialport`
 
