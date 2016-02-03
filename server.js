@@ -50,3 +50,4 @@ serial.on('data', function(data) {
 server.listen(serverPort, function() {
     console.log('listening on *:%s', serverPort);
 });
+
